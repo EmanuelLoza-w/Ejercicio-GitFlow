@@ -193,7 +193,7 @@ Por ejemplo, agrega una breve descripción del sistema en la siguiente sección:
 
 Escribe aquí una descripción breve del sistema:
 
-> Respuesta del estudiante: ...
+> El sistema permite calcular el precio final de un producto según el tipo de cliente. Actualmente contempla dos tipos de clientes: normales, que mantienen el precio original del producto, y estudiantes, que reciben un descuento del 15%. Además, cuenta con pruebas automatizadas para verificar el correcto funcionamiento del cálculo de descuentos y la validación de precios.
 
 Luego realice un commit:
 
