@@ -1,7 +1,14 @@
+
 const assert = require("assert");
-const { calcularTotal } = require("../src/descuentos");
+const { calcularPrecioFinal } = require("../src/descuentos");
 
-assert.strictEqual(calcularTotal(100, 20), 80);
-assert.strictEqual(calcularTotal(50, 0), 50);
+// Cliente normal
+assert.strictEqual(calcularPrecioFinal(10000, "normal"), 10000);
 
-console.log("Tests ejecutados correctamente");
+// Estudiante
+assert.strictEqual(calcularPrecioFinal(10000, "estudiante"), 8500);
+
+// Precio cero
+assert.strictEqual(calcularPrecioFinal(0, "estudiante"), 0);
+
+console.log("Todos los tests ejecutados correctamente");
